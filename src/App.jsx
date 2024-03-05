@@ -1,14 +1,18 @@
-import './App.css'
-import MiPrimerComponente from './MiPrimerComponente'
+import './assets/style/App.css'
+import FormLogin from './components/FormLogin'
 
-function App() {
-  
+
+function App() { 
 
   return (
     <>
-    <h1>Hola mundo desde React</h1>
+    {/* <h1>Hola mundo desde React</h1>
     <p>Te queremos Vite y React</p>
-    <MiPrimerComponente></MiPrimerComponente>
+    <MiPrimerComponente></MiPrimerComponente> */}
+    <section className="contenedor">
+      <FormLogin></FormLogin>
+
+    </section>
     </>
   )
 }
