@@ -5,7 +5,6 @@ function FormLogin() {
     const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
     const [mensajeBievenida, setMensajeBievenida] = useState('');
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
   
     const handleUsuarioChange = (event) => {
       const usuarioIngresado = event.target.value;
@@ -22,7 +21,6 @@ function FormLogin() {
     const handleLogin = () => {
       // Simplemente para demostración, puedes implementar la autenticación real aquí.
       if (usuario === 'usuario' && password === '123456') {
-        setIsLoggedIn(true);
         setMensajeBievenida(`Bienvenido ${usuario} a nuestro sitio web`);
       } else {
         setMensajeBievenida('Usuario o contraseña incorrectos');
