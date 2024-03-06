@@ -21,7 +21,7 @@ function FormLogin() {
     const handleLogin = () => {
       // Simplemente para demostración, puedes implementar la autenticación real aquí.
       if (usuario === 'peperina' && password === '123456') {
-        setMensajeBievenida(`Bienvenido ${usuario} a nuestro sitio web`);
+        setMensajeBievenida(`Bienvenida ${usuario} a nuestro sitio web`);
       } else {
         setMensajeBievenida('Usuario o contraseña incorrectos');
       }
